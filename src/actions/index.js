@@ -24,8 +24,8 @@ export const setError = (err) => {
     return ({type:ERROR, payload: err});
 }
 
-export const addSmurf = (smurfObj) => {
-    return ({type:ADD_SMURF, payload: smurfObj});
+export const addSmurf = (smurf) => {
+    return ({type:ADD_SMURF, payload: smurf});
 }
 
 

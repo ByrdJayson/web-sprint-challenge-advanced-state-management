@@ -21,13 +21,15 @@ const AddForm = (props) => {
         });
     }
 
-    const handleSubmit = (e, dispatch) => {
+    const handleSubmit = (e) => {
         e.preventDefault();
         if (state.name === "" || state.position === "" || state.nickname === "") {
             //dispatch a custom error action
+            props.setError('Fields Must Not Be Empty');
         
         } else {
             //dispatch an addSmurf action
+            props.addSmurf(state)
         }
     }
 

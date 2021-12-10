@@ -36,7 +36,7 @@ const reducer = (state = initialState, action)=>{
         case 'ADD_SMURF': {
             return {
                 ...state,
-                //TODO ADD SMURF STATE CHANGE
+                smurfs:[ ...state.smurfs, action.payload]
                 
             }
         }
