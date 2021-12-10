@@ -7,7 +7,7 @@ export const initialState = {
 
 const reducer = (state = initialState, action)=>{
     switch(action.type){
-        case 'FETCH_SMURF': {
+        case 'FETCH_SMURFS': {
             return {
                 ...state,
                 loading: true,
@@ -37,6 +37,7 @@ const reducer = (state = initialState, action)=>{
             return {
                 ...state,
                 //TODO ADD SMURF STATE CHANGE
+                
             }
         }
 
