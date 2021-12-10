@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { connect } from 'react-redux';
-import { addSmurf, setError } from '../actions/index.js'
+import { addSmurf, setError} from '../actions/index.js'
+
 
 const AddForm = (props) => {
     const [state, setState] = useState({
@@ -53,7 +54,7 @@ const AddForm = (props) => {
                 <textarea onChange={handleChange} value={state.description} name="description" id="description" />
             </div>
             {
-                state.error && <div data-testid="errorAlert" className="alert alert-danger" role="alert">Error: {props.state.error}</div>
+                props.error && <div data-testid="errorAlert" className="alert alert-danger" role="alert">Error: {props.error}</div>
             }
             <button>Submit Smurf</button>
         </form>
