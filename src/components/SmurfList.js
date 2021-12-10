@@ -11,7 +11,7 @@ import { connect } from 'react-redux';
     return(<div className="listContainer">
 
         {smurfs.map(smurf => {
-            return <Smurf smurf={smurf}/>
+            return <Smurf smurf={smurf} key={smurf.name}/>
         })}
     </div>);
 }

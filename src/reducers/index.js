@@ -11,7 +11,6 @@ const reducer = (state = initialState, action)=>{
             return {
                 ...state,
                 loading: true,
-                smurfs: [],
                 error: ''
             }
         }
@@ -28,7 +27,6 @@ const reducer = (state = initialState, action)=>{
             return {
                 ...state,
                 error: action.payload,
-                smurfs: [],
                 loading: false
             }
         }
